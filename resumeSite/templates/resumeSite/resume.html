@@ -1,0 +1,442 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bestuzhev</title>
+  <meta name="robots" content="index-follow">
+  <meta name="description"
+    content="Выполняем комплекс работ в области транспортировки, погрузки и доставки различного перечня грузов для нефтегазового сектора. Мы готовы начать работу с вами.">
+  <meta name="keywords"
+    content="Официальный сайт ЭталонТрансСервис, ЭталонТрансСервис Сайты, ЭталонТрансСервис Порталы, ЭталонТрансСервис Предприятие, Предприятие, ЭталонТранс, Альбина Топоркова, транспортировка, погрузка, погрузочно-разгрузочные работы, перевозка, транспортные средства, Западная Сибирь, Пойковский, подготовительно-заключительные работы, завоз, вывоз, подвоз, монтаж, аудит безопасности, бизнес, Профильная аккредитация, вакансии, работа">
+  <meta property="og:title" content="Официальный веб-сайт ЭталонТрансСервис">
+  <meta property="og:type" content="website">
+  <meta property="og:description"
+    content="Выполняем комплекс работ в области транспортировки, погрузки и доставки различного перечня грузов для нефтегазового сектора. Мы готовы начать работу с вами.">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="" title="" alt="">
+  <meta property="twitter:title" content="Официальный веб-сайт ЭталонТрансСервис">
+  <meta property="twitter:description"
+    content="Выполняем комплекс работ в области транспортировки, погрузки и доставки различного перечня грузов для нефтегазового сектора. Мы готовы начать работу с вами.">
+  <meta property="twitter:image" content="" title="" alt="">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet prefetch"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css">
+  <link href="{% static 'EtalonSite/css/base.css' %}" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <style>
+    @font-face {
+      font-family: AeroportLight;
+      src: url("/AeroportLight.ttf") format("truetype");
+    }
+
+    body {
+      font-family: "AeroportLight", Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      background-color: #16356F;
+      color: #fff;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    .listTech {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+    .iUBdN {
+      font-size: 18px;
+      line-height: 22px;
+      width: 50%;
+      font-weight: 600;
+      padding: 6px 10px 8px;
+      cursor: default;
+      text-align: center;
+      color: white;
+      border-right: 1px solid rgb(255, 56, 56);
+      border-bottom: 1px solid rgb(255, 56, 56);
+    }
+
+    @media (min-width: 1440px) {
+      .iUBdN {
+        padding: 17px 30px 19px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .iUBdN {
+        padding: 14px 24px 16px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .iUBdN {
+        margin-top: -2px;
+        margin-left: -2px;
+        padding: 7px 19px 9px;
+        border-width: 2px;
+        transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .iUBdN {
+        width: auto;
+        margin-top: -1px;
+        margin-left: -1px;
+        padding: 20px 20px 20px;
+        border: 2px solid rgb(255, 56, 56);
+      }
+    }
+
+    @media (min-width: 400px) and (max-width: 600px) {
+      .iUBdN {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .iUBdN {
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .iUBdN {
+        font-size: 23px;
+        line-height: 28px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .iUBdN {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+
+
+    .num1::before {
+      content: "1";
+      color: transparent;
+      font-size: 80px;
+      line-height: 100px;
+      -webkit-text-stroke: 1px rgb(255, 56, 56);
+    }
+
+    .num2::before {
+      content: "2";
+      color: transparent;
+      font-size: 80px;
+      line-height: 100px;
+      -webkit-text-stroke: 1px rgb(255, 56, 56);
+    }
+
+    .num3::before {
+      content: "3";
+      color: transparent;
+      font-size: 80px;
+      line-height: 100px;
+      -webkit-text-stroke: 1px rgb(255, 56, 56);
+    }
+
+    .num4::before {
+      content: "4";
+      color: transparent;
+      font-size: 80px;
+      line-height: 100px;
+      -webkit-text-stroke: 1px rgb(255, 56, 56);
+    }
+
+    .footer {
+      font-size: 0.9375rem;
+      line-height: 1.0625rem;
+      background-color: #F5F5F5;
+      letter-spacing: -.04em;
+      padding: 1.5625rem 0;
+      color: #b7b7b7;
+      /* border-radius: 25px 25px 0 0; */
+      text-align: center;
+    }
+
+    .layout__footer {
+      z-index: 0;
+    }
+
+    .inner {
+      width: 100%;
+      max-width: 90rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+    }
+
+    header {
+      margin-bottom: 100px;
+    }
+
+
+
+
+    .centered-container {
+      background-color: #fff;
+      display: inline-flex;
+      padding: 4rem;
+      border-radius: 0.125rem;
+      border: 1px solid rgba(0, 0, 0, .1);
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .04);
+    }
+
+    .link {
+      color: #2175ff;
+      cursor: pointer;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    .link--arrowed {
+      display: inline-block;
+      transform: rotate(-90deg);
+      height: 2rem;
+      line-height: 2rem;
+    }
+
+    .link--arrowed .arrow-icon {
+      position: relative;
+      top: -1px;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+      vertical-align: middle;
+    }
+
+    .link--arrowed .arrow-icon--circle {
+      transition: stroke-dashoffset 0.3s ease;
+      stroke-dasharray: 95;
+      stroke-dashoffset: 95;
+    }
+
+    .link--arrowed:hover .arrow-icon {
+      transform: translate3d(5px, 0, 0);
+    }
+
+
+    .link--arrowed:hover .arrow-icon--circle {
+      stroke-dashoffset: 0;
+    }
+
+    .itemHeader:hover {
+      color: rgb(255, 56, 56);
+    }
+
+    .itemHeader-red {
+      color: rgb(255, 56, 56);
+      padding: 0 0px 30px 28px;
+      font-weight: 300;
+      font-size: 3.2rem;
+      /* line-height: 1; */
+    }
+
+    .itemHeader {
+      text-decoration: none;
+      color: white;
+      padding: 30px 20px 20px 30px;
+    }
+
+    .itemHeader-Big {
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      padding: 0 0px 30px 28px;
+      font-size: 5rem;
+
+    }
+
+    a {
+      background-color: transparent;
+      text-decoration: none;
+    }
+  </style>
+
+  <header>
+    <div class="container-fluid" style="color: #000">
+      <div class="row">
+        <div class="col-6">
+          <a href="mailto:urkabestyzhev@gmail.com?subject=Интерес к услуге оказываемой автокрановой техникой &body=Здравствуйте! Меня заинтересовла услуга оказываемая автокрановой техникой. Расскажите пожалуйста подробнее о условиях и деталях"
+            target="_blank">
+            <h5 class="itemHeader">urkabestyzhev@gmail.com</h5>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="tel:+79821385347" class="contacts__item-text contacts__item-text_link navbar-collapse-item">
+            <h5 class="itemHeader">+79821385347</h5>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h5 class="itemHeader-Big">Bestuzhev
+            <span style="padding-left: 170px;">
+              Yuriy
+            </span>
+
+          </h5>
+        </div>
+        <div class="col-6">
+          <h5 class="itemHeader-red">
+            Разрабатываю компаниям приложения.</h5>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section style="margin-bottom: 100px;
+    background-color: #ece9e9; padding: 50px 20px 40px 20px; height: 400px;">
+      <div class="container" style="color: #000">
+        <div class="row">
+          <div class="col">
+            <img src="{% static 'resumeSite/images/LOGO_BLUE.svg' %}" alt="" style="width: 230px;">
+
+          </div>
+          <div class="col">
+            <img src="{% static 'resumeSite/images/left_medium.png' %}" alt="" style="width: 230px;">
+          </div>
+          <div class="col">
+            <img src="{% static 'resumeSite/images/ets.svg' %}" alt="" style="width: 230px;">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <center>
+      <article>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img src="{% static 'resumeSite/images/im.jpg' %}"
+                style="margin-top: -300px;width: 900px; border-radius: 50px; margin-bottom: 100px;" class="img-fluid"
+                alt="Yuriy Bestuzhev">
+            </div>
+          </div>
+        </div>
+      </article>
+    </center>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <h6 class="itemHeader-red"
+              style="padding: 0 0px 20px 0px; font-size: 38px; border-bottom: 3px solid rgb(255, 56, 56);">
+              Этапы разработки продукта</h6>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            <span class="num1"></span>
+            <h4>Бриф</h4>
+            <h6>Краткое описание продукта, включающее основные функции и варианты использования. В большинстве случаев
+              это делается собственными силами, однако я могу создать их для себя.</h6>
+          </div>
+          <div class="col">
+            <span class="num2"></span>
+            <h4>Спецификация</h4>
+            <h6>Подробный обзор продукта, охватывающий все возможные функции и варианты использования, а также
+              технические требования. Дизайнеры и разработчики используют этот документ для оценки затрат на свою
+              работу. Создайте свою собственную спецификацию или попросите меня разработать ее для вас.</h6>
+
+          </div>
+          <div class="col">
+            <span class="num3"></span>
+            <h4>Дизайн</h4>
+            <h6>Я не создаю дизайн. Клиенты обычно обращаются ко мне, когда у них уже есть макеты или они находятся в
+              процессе их создания.</h6>
+          </div>
+          <div class="col">
+            <span class="num4"></span>
+            <h4>Разработка</h4>
+            <h6>Это моя специализация. Пишу сайты. Пожалуйста, ознакомьтесь со стэком технологий, которые я использую.
+              Чтобы получить ценовое предложение на ваш продукт, отправьте мне тестовую спецификацию или макеты дизайна.
+            </h6>
+          </div>
+
+        </div>
+      </div>
+      </div>
+
+      </div>
+
+
+    </section>
+
+    <section>
+      <div class="container" style="margin: 100px auto;">
+        <div class="row">
+          <div class="col-12">
+
+            <h6 class="itemHeader-red"
+              style="padding: 0 0px 20px 0px; font-size: 38px; border-bottom: 3px solid rgb(255, 56, 56);">
+              Стэк технологий</h6>
+          </div>
+        </div>
+        <h1 style="margin: 50px auto;">Frontend</h1>
+        <ul class="listTech">
+          <li class="iUBdN">html5</li>
+          <li class="iUBdN">pug</li>
+          <li class="iUBdN">css3</li>
+          <li class="iUBdN">sccs</li>
+          <li class="iUBdN">javascript</li>
+          <li class="iUBdN">typescript</li>
+          <li class="iUBdN">styled-components</li>
+          <li class="iUBdN">adaptive & responsive design</li>
+          <li class="iUBdN">accessibility</li>
+        </ul>
+
+        <h1 style="margin: 50px auto;">Backend (API & Admin UI)</h1>
+        <ul class="listTech">
+          <li class="iUBdN">django</li>
+          <li class="iUBdN">node.js</li>
+          <li class="iUBdN">postgresql</li>
+          <li class="iUBdN">elasticsearch</li>
+          <li class="iUBdN">json api</li>
+          <li class="iUBdN">amazon aws</li>
+          <li class="iUBdN">semantic ui</li>
+          <li class="iUBdN">graphql</li>
+          <li class="iUBdN">jquery</li>
+        </ul>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer role="contentinfo" class="footer layout__footer">
+    <div class="inner footer__inner">Юрий Бестужев ©&nbsp;2022&nbsp;— 2023</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+
+</html>
